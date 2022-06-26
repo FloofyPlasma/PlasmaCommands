@@ -9,9 +9,11 @@
   "keywords": [],
   "author": "FloofyPlasma, floofyplasma.com",
   "license": "ISC",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/FloofyPlasma/PlasmaCommands"
+  },
+  "dependencies": {
+    "mongoose": "^6.4.0"
   }
 }
