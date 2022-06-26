@@ -1,6 +1,6 @@
 {
   "name": "plasmacommands",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WIP Discord.js command handler.",
   "main": "src/index.js",
   "scripts": {
