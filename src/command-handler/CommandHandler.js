@@ -35,7 +35,8 @@ class CommandHandler {
                 slash, 
                 testOnly, 
                 description,  
-                delete: del
+                delete: del,
+                aliases = [],
             } = commandObject
 
             if (del) {
@@ -71,7 +72,11 @@ class CommandHandler {
             }
 
            if (slash !== true) {
-            this.commands.set(command.commandName, command)
+            const names = [command.commandName, ...aliases]
+
+            for (const name of names) {
+                this.commands.set(name, command)
+            }
            }
         }
 
